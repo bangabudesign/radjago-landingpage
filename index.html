@@ -7,9 +7,11 @@
     <title>RadjaGo - Aplikasi Jastip Online Indonesia</title>
   </head>
   <body>
-    <header>
-      <nav class="h-18 bg-white sticky top-0">
-        <div class="h-full w-full max-w-7xl px-4 flex items-center justify-between mx-auto">
+    <header class="sticky top-0 z-100">
+      <nav class="h-18 bg-white/90 backdrop-blur-xs border-b border-white">
+        <div
+          class="h-full w-full max-w-6xl px-4 flex items-center justify-between mx-auto"
+        >
           <div class="w-50">
             <img
               src="/assets/logo-rg-2.png"
@@ -52,46 +54,73 @@
                 Mitra
               </a>
             </li>
+            <li>
+              <a
+                href="#vendor"
+                class="px-4 py-3 cursor-pointer hover:text-purple-600 hover:bg-gray-100 rounded-full"
+              >
+                Vendor
+              </a>
+            </li>
           </ul>
           <div class="w-50 text-right">
             <a
               href="#download"
               class="pl-3 pr-3 md:pr-4 py-3 bg-sky-500 text-white rounded-full cursor-pointer hover:bg-purple-500 inline-flex items-center justify-center gap-2"
-              >
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                  </svg>                  
-              </span>
-              <span class="hidden md:inline">Download Now</span>
-              </a
             >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </span>
+              <span class="hidden md:inline">Download Gratis</span>
+            </a>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="bg-linear-to-bl from-purple-900 to-purple-600">
+    <section
+      class="bg-linear-to-bl from-purple-900 to-purple-600 relative flex items-center justify-center"
+      style="min-height: calc(100vh - 72px)"
+    >
+      <img
+        src="/assets/hero-image.jpeg"
+        alt=""
+        class="w-full h-full object-cover object-center absolute inset-0 opacity-20"
+      />
       <div
-        class="h-full w-full mx-auto max-w-3xl px-4 py-50 grid gap-4 text-center text-white"
+        class="relative h-full w-full mx-auto max-w-3xl px-4 py-40 text-center text-white"
       >
-        <h1 class="text-3xl md:text-6xl font-bold">
+        <h1 class="text-4xl md:text-6xl font-bold mb-2">
           RadjaGo Aplikasi Jastip Online Indonesia
         </h1>
-        <p>
-          Bergabunglah dengan RadjaGo, solusi ojek online yang siap memberikan
-          kenyamanan dan efisiensi dalam setiap perjalanan Anda.
+        <p class="mb-4">
+          Bergabunglah dengan RadjaGo, aplikasi jastip online yang memudahkan
+          titip beli barang lebih praktis, aman, dan efisien dalam satu
+          genggaman.
         </p>
-        <div class="flex gap-2 items-center justify-center">
+        <div class="flex flex-wrap gap-2 items-center justify-center">
           <a
             href="#download"
             class="px-6 py-2 bg-sky-500 text-white rounded-full cursor-pointer hover:bg-purple-500"
           >
-            Download Now
+            Download Gratis
           </a>
           <a
             href="#legalitas"
-            class="px-6 py-2 text-sky-300 rounded-full cursor-pointer hover:bg-purple-500/10 hover:underline hover:text-white"
+            class="px-6 py-2 border border-white/20 text-white rounded-full cursor-pointer hover:border-white/40 hover:bg-white/20 hover:text-white"
           >
             Cek Legalitas
           </a>
@@ -101,10 +130,15 @@
 
     <section>
       <div
-        class="h-full w-full mx-auto max-w-2xl px-4 py-20 grid gap-4 text-center"
+        class="h-full w-full mx-auto max-w-4xl px-4 py-20 grid gap-4 text-center"
       >
-        <h2 class="text-3xl md:text-6xl font-bold">RadjaGo</h2>
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">RadjaGo</h2>
         <p>
+          Radja Go adalah aplikasi penyedia layanan transportasi online yang
+          berasal dari Banua, Kalimantan Selatan. Aplikasi ini dikenal dengan
+          tarif murah dan berbagai keuntungan yang ditawarkan, menjadikannya
+          pesaing dalam bisnis transportasi online. Radja Go bertujuan
+          memberikan solusi transportasi online yang terjangkau bagi masyarakat.
           Aplikasi RadJago Di Resmikan Di Denpasar Bali, Bersama 35 perwakilan
           dari beberapa daerah di indonesia. dengan berbagai pertimbangan saat
           Covid dan pasca Covid sempat Vakum, MULAI kembali di Juni 2025
@@ -112,38 +146,53 @@
       </div>
     </section>
 
-    <section id="customer">
-      <div class="h-full w-full mx-auto max-w-6xl px-4">
-        <div class="flex flex-wrap -mx-4 items-center">
-          <div class="w-full lg:w-1/2 px-4 pt-14">
+    <section
+      id="customer"
+      class="bg-linear-to-b from-transparent to-purple-200"
+    >
+      <div class="h-full w-full mx-auto sm:max-w-xl lg:max-w-6xl px-4">
+        <div
+          class="flex flex-col-reverse lg:flex-row flex-wrap -mx-4 items-center"
+        >
+          <div class="w-full lg:w-1/2 px-4 lg:pt-14">
             <div class="w-full max-w-md mx-auto">
               <img src="/assets/sistem-customer-2.png" alt="" />
             </div>
           </div>
           <div class="w-full lg:w-1/2 px-4 py-20">
             <div class="grid gap-4">
-              <h2 class="text-3xl md:text-6xl font-bold">
-                Sistem Pada <span class="text-sky-500">Customer Order</span>
+              <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                Harga Jujur,
+                <span class="text-sky-500 font-serif italic"> Tanpa Drama</span>
               </h2>
               <p>
-                Aplikasi RadJago Di Resmikan Di Denpasar Bali, Bersama 35
-                perwakilan dari beberapa daerah di indonesia. dengan berbagai
-                pertimbangan saat Covid dan pasca Covid sempat Vakum, MULAI
-                kembali di Juni 2025
+                Kami jaga kepercayaanmu dengan sistem transparan: harga produk
+                asli, ongkir bersaing, dan layanan fleksibel tanpa biaya
+                tersembunyi.
               </p>
+              <ul class="pl-4 list-disc">
+                <li>Ongkos kirim kompetitif</li>
+                <li>Tidak ada biaya tambahan</li>
+                <li>Tips layanan suka rela</li>
+                <li>Tidak ada kenaikan harga produk</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="driver" class="bg-linear-to-br from-purple-700 to-purple-900 text-white">
-      <div class="h-full w-full mx-auto max-w-6xl px-4">
+    <section
+      id="driver"
+      class="bg-linear-to-br from-purple-700 to-purple-900 text-white"
+    >
+      <div class="h-full w-full mx-auto sm:max-w-xl lg:max-w-6xl px-4">
         <div class="flex flex-wrap -mx-4 items-end">
           <div class="w-full lg:w-1/2 px-4 py-20">
             <div class="grid gap-4">
-              <h2 class="text-3xl md:text-6xl font-bold">
-                Sistem Pada <span class="text-sky-300">Mitra Driver</span> Kami
+              <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                Sistem Kemitraan Driver
+                <span class="text-sky-300 font-serif italic">Tanpa Beban</span>
               </h2>
               <p>
                 RadjaGo menghadirkan sistem kemitraan driver yang mudah dan
@@ -158,7 +207,7 @@
             </div>
           </div>
 
-          <div class="w-full lg:w-1/2 px-4 pt-14">
+          <div class="w-full lg:w-1/2 px-4 lg:pt-14">
             <div class="w-full max-w-md mx-auto">
               <img src="/assets/real-delivery-2.png" alt="" />
             </div>
@@ -168,230 +217,455 @@
     </section>
 
     <section id="aplikator" class="bg-linear-to-b from-sky-100 to-purple-50">
-        <div class="h-full w-full mx-auto max-w-6xl px-4 py-20">
-          <div class="grid gap-4 text-center">
-              <h2 class="text-3xl md:text-6xl font-bold">
-                Keuntungan Aplikator
-              </h2>
-              <p class="mb-6">
-                  Aplikasi RadJago diresmikan di Denpasar, Bali, dengan dihadiri oleh
-                  35 perwakilan dari berbagai daerah di Indonesia.
-              </p>
-              <div class="flex flex-wrap -mx-4 items-center">
-                  <div class="px-4 w-1/2 md:w-1/4">
-                      <div class="bg-purple-600 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                              <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
-                              <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
-                            </svg>                          
-                      </div>
-                      <h3 class="font-bold text-lg">Transaksi PPOB<br>Driver</h3>
-                  </div>
-                  <div class="px-4 w-1/2 md:w-1/4">
-                      <div class="bg-purple-600 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                              <path fill-rule="evenodd" d="M12 1.5c-1.921 0-3.816.111-5.68.327-1.497.174-2.57 1.46-2.57 2.93V21.75a.75.75 0 0 0 1.029.696l3.471-1.388 3.472 1.388a.75.75 0 0 0 .556 0l3.472-1.388 3.471 1.388a.75.75 0 0 0 1.029-.696V4.757c0-1.47-1.073-2.756-2.57-2.93A49.255 49.255 0 0 0 12 1.5Zm3.53 7.28a.75.75 0 0 0-1.06-1.06l-6 6a.75.75 0 1 0 1.06 1.06l6-6ZM8.625 9a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm5.625 3.375a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" />
-                            </svg>
-                                                    
-                      </div>
-                      <h3 class="font-bold text-lg">Tips Layanan<br>Customer Pasca Order</h3>
-                  </div>
-                  <div class="px-4 w-1/2 md:w-1/4">
-                      <div class="bg-purple-600 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                              <path d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 0 0 7.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 0 0 4.902-5.652l-1.3-1.299a1.875 1.875 0 0 0-1.325-.549H5.223Z" />
-                              <path fill-rule="evenodd" d="M3 20.25v-8.755c1.42.674 3.08.673 4.5 0A5.234 5.234 0 0 0 9.75 12c.804 0 1.568-.182 2.25-.506a5.234 5.234 0 0 0 2.25.506c.804 0 1.567-.182 2.25-.506 1.42.674 3.08.675 4.5.001v8.755h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3Zm3-6a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75v-3Zm8.25-.75a.75.75 0 0 0-.75.75v5.25c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75v-5.25a.75.75 0 0 0-.75-.75h-3Z" clip-rule="evenodd" />
-                            </svg>
-                                                    
-                      </div>
-                      <h3 class="font-bold text-lg">Penjualan Sistem<br>Vendor MKV</h3>
-                  </div>
-                  <div class="px-4 w-1/2 md:w-1/4">
-                      <div class="bg-purple-600 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10">
-                              <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
-                              <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z" clip-rule="evenodd" />
-                              <path d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z" />
-                            </svg>
-                                                    
-                      </div>
-                      <h3 class="font-bold text-lg">Sistem Affiliasi<br>Costumer</h3>
-                  </div>
-              </div>
+      <div class="h-full w-full mx-auto lg:max-w-6xl px-4 py-20">
+        <div class="grid gap-4 text-center sm:max-w-xl mx-auto">
+          <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+            <span class="text-sky-500 font-serif italic">Manfaat & Peluang</span
+            ><br />untuk Aplikator RadjaGo
+          </h2>
+          <p class="mb-6">
+            Aplikasi RadJago diresmikan di Denpasar, Bali, dengan dihadiri oleh
+            35 perwakilan dari berbagai daerah di Indonesia.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap -mx-4 items-center text-center">
+          <div class="px-4 w-1/2 md:w-1/4 group">
+            <div
+              class="bg-linear-to-b from-purple-900 to-purple-600 group-hover:from-sky-700 group-hover:to-sky-500 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-10"
+              >
+                <path
+                  d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </div>
-      </section>
-  
-      <section id="mitra" class="bg-linear-to-b from-purple-50 to-transparent">
-          <div class="h-full w-full mx-auto max-w-6xl px-4">
-            <div class="flex flex-wrap -mx-4 items-center">
-              <div class="w-full lg:w-1/2 px-4 pt-14">
-                <div class="w-full max-w-md mx-auto">
-                  <img src="/assets/phone-couple.png" alt=""  />
-                </div>
-              </div>
-              <div class="w-full lg:w-1/2 px-4 py-20">
-                <div class="grid gap-4">
-                  <h2 class="text-3xl md:text-6xl font-bold">
-                    Cara Kerja <span class="text-sky-500">Revenue</span> di Akun Driver
-                  </h2>
-                  <p>
-                    Sistem revenue di akun driver RadJago bersumber dari aktivitas layanan dan penjualan.
-                  </p>
-                  <ul class="pl-4 list-disc">
-                    <li>Kewajiban Transaksi PPOB Driver</li>
-                    <li>Tips Layanan Costomer Pasca Order</li>
-                    <li>Penjualan Sistem Vendor MKV</li>
-                    <li>Sistem Affiliasi Customer</li>
-                  </ul>
-                </div>
-              </div>
+            <h3 class="font-bold text-lg">Transaksi PPOB<br />Driver</h3>
+          </div>
+          <div class="px-4 w-1/2 md:w-1/4 group">
+            <div
+              class="bg-linear-to-b from-purple-900 to-purple-600 group-hover:from-sky-700 group-hover:to-sky-500 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-10"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 1.5c-1.921 0-3.816.111-5.68.327-1.497.174-2.57 1.46-2.57 2.93V21.75a.75.75 0 0 0 1.029.696l3.471-1.388 3.472 1.388a.75.75 0 0 0 .556 0l3.472-1.388 3.471 1.388a.75.75 0 0 0 1.029-.696V4.757c0-1.47-1.073-2.756-2.57-2.93A49.255 49.255 0 0 0 12 1.5Zm3.53 7.28a.75.75 0 0 0-1.06-1.06l-6 6a.75.75 0 1 0 1.06 1.06l6-6ZM8.625 9a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm5.625 3.375a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">
+              Tips Layanan<br />Customer Pasca Order
+            </h3>
+          </div>
+          <div class="px-4 w-1/2 md:w-1/4 group">
+            <div
+              class="bg-linear-to-b from-purple-900 to-purple-600 group-hover:from-sky-700 group-hover:to-sky-500 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-10"
+              >
+                <path
+                  d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 0 0 7.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 0 0 4.902-5.652l-1.3-1.299a1.875 1.875 0 0 0-1.325-.549H5.223Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M3 20.25v-8.755c1.42.674 3.08.673 4.5 0A5.234 5.234 0 0 0 9.75 12c.804 0 1.568-.182 2.25-.506a5.234 5.234 0 0 0 2.25.506c.804 0 1.567-.182 2.25-.506 1.42.674 3.08.675 4.5.001v8.755h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3Zm3-6a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75v-3Zm8.25-.75a.75.75 0 0 0-.75.75v5.25c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75v-5.25a.75.75 0 0 0-.75-.75h-3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">Penjualan Sistem<br />Vendor MKV</h3>
+          </div>
+          <div class="px-4 w-1/2 md:w-1/4 group">
+            <div
+              class="bg-linear-to-b from-purple-900 to-purple-600 group-hover:from-sky-700 group-hover:to-sky-500 p-2 rounded-full size-20 text-white flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-10"
+              >
+                <path
+                  d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">Sistem Affiliasi<br />Costumer</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="mitra"
+      class="bg-linear-to-br from-purple-700 to-purple-900 text-white"
+    >
+      <div class="h-full w-full mx-auto sm:max-w-xl lg:max-w-6xl px-4">
+        <div
+          class="flex flex-wrap flex-col-reverse lg:flex-row -mx-4 items-end"
+        >
+          <div class="w-full lg:w-1/2 px-4 lg:pt-14">
+            <div class="w-full max-w-md mx-auto">
+              <img src="/assets/phone-couple.png" alt="" />
             </div>
           </div>
-        </section>
-
-        <section class="bg-purple-900 text-white">
-            <div class="h-full w-full mx-auto max-w-6xl px-4 py-10">
-              <div class="flex flex-wrap -mx-4 items-center">
-                <div class="w-full lg:w-1/2 px-4">
-                    <h2 class="text-3xl md:text-6xl font-bold">
-                        Kewajiban<br> Mitra Driver
-                      </h2>
-                </div>
-                <div class="w-full lg:w-1/2 px-4">
-                    <p>
-                        Hasil riset internal menunjukkan bahwa <span class="text-sky-400">tidak ada tekanan</span> atau kewajiban khusus bagi mitra. Namun, mereka tetap didorong untuk rutin transaksi seperti bayar PDAM, listrik, wifi, angsuran, BPJS, dan lainnya.
-                    </p>
-                </div>
-              </div>
-            </div>
-            <hr class="opacity-20">
-            <div class="h-full w-full mx-auto max-w-4xl px-4 py-10 z-10 relative">
-                <div class="grid gap-4 text-center">
-                  <h2 class="text-3xl md:text-6xl font-bold">
-                    Server Milik Sendiri Untuk <span class="text-sky-300">Kinerja Maksimal</span>
-                  </h2>
-                  <p class="mb-6">
-                    Untuk mendukung kelancaran transaksi dan keamanan data, RadJago sejak 2022 telah menggunakan server colocation di data center BSD sebagai bentuk komitmen menghadapi lonjakan trafik pengguna yang terus meningkat.
-                  </p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden h-[400px] -mt-[200px]">
-                <div class="absolute inset-0 bg-linear-to-b from-purple-900 to-transparent"></div>
-                <img src="/assets/premium-bg.webp" alt="" class="w-full h-full object-cover object-center">
-            </div>
-        </section>
-
-        <section>
-            <div
-              class="w-full mx-auto max-w-3xl px-4 pt-20 grid gap-4 text-center"
-            >
-              <h1 class="text-3xl md:text-6xl font-bold">
-                Legal & Tersertifikasi
-              </h1>
+          <div class="w-full lg:w-1/2 px-4 py-20">
+            <div class="grid gap-4">
+              <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                Satu Aplikasi,
+                <span class="text-sky-300 font-serif italic"
+                  >Banyak Sumber Penghasilan</span
+                >
+              </h2>
               <p>
-                Semua dokumen legal seperti NIB, NPWP, PSE, hingga SK Kemenkumham telah terpenuhi. Proses lanjutan seperti HAKI & BSSN sedang dalam tahap finalisasi.
+                Pendapatan driver di RadjaGo tidak hanya berasal dari mengantar
+                titipan. Dengan sistem yang terintegrasi, driver dapat
+                menghasilkan dari berbagai aktivitas layanan dan penjualan.
               </p>
-              
+              <ul class="pl-4 list-disc">
+                <li>Kewajiban Transaksi PPOB Driver</li>
+                <li>Tips Layanan Costomer Pasca Order</li>
+                <li>Penjualan Sistem Vendor MKV</li>
+                <li>Sistem Affiliasi Customer</li>
+              </ul>
             </div>
-            <div class="w-full mx-auto max-w-4xl pb-20 px-4">
-                <div class="flex flex-wrap -mx-4 items-start mt-10 divide-y md:divide-none text-sm">
-                    <div class="w-full md:w-1/2 px-4">
-                        <ul class="text-center md:text-right divide-y">
-                                <li class="py-4">NIB : 0507240037635</li>
-                                <li class="py-4">NPWP : 197550320731000</li>
-                                <li class="py-4">Akte Notaris : 013 Tanggal 02 Juli 2024</li>
-                                <li class="py-4">PSE Kominfo Pusat : 050724003763500000001</li>
-                                <li class="py-4">SK Kemenkumham : AHU-0048171.AH.01.01.TAHUN 2024</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/2 px-4">
-                        <ul class="text-center md:text-left divide-y">
-                            <li class="py-4">HAKI : On Progress</li>
-                            <li class="py-4">BNRI Pusat : 020645 -12 Juli 2024</li>
-                            <li class="py-4">NITKU : 0197550320731000000000</li>
-                            <li class="py-4">D&B D-U-N-S NUMBER : 64-663-6601</li>
-                            <li class="py-4">BSSN (Badan Siber Sandi Negara) : On Progress</li>
-                        </ul>
-                    </div>
-                  </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="vendor" class="bg-linear-to-t from-purple-50 to-transparent">
-            <div class="h-full w-full mx-auto max-w-6xl px-4">
-              <div class="flex flex-wrap -mx-4 items-center">
-                <div class="w-full lg:w-1/2 px-4 py-20">
-                  <div class="grid gap-4">
-                    <h2 class="text-3xl md:text-6xl font-bold">
-                      <span class="text-sky-500">Vendor MKV</span> Sistem Kemitraan Area
-                    </h2>
-                    <p>
-                        Cara kerjanya adalah Setiap customer melakukan transaksi di area Vendor maka otomatis vendor mendapatkan bagi hasil secara real time tanpa harus vendor berjualan PPOB
-                    </p>
-                  </div>
-                </div>
-                <div class="w-full lg:w-1/2 px-4 pt-14">
-                  <div class="w-full max-w-md mx-auto">
-                    <img src="/assets/phone-couple.png" alt=""  />
-                  </div>
-                </div>
-              </div>
+    <section class="bg-linear-to-b from-purple-50 to-transparent">
+      <div class="h-full w-full mx-auto sm:max-w-xl lg:max-w-6xl px-4">
+        <div
+          class="flex flex-wrap flex-col-reverse lg:flex-row -mx-4 items-center"
+        >
+          <div class="w-full lg:w-1/2 px-4 py-6">
+            <div class="w-full max-w-sm mx-auto">
+              <img src="/assets/naik-motor-beat.png" alt="" />
             </div>
-        </section>
+          </div>
+          <div class="w-full lg:w-1/2 px-4 py-20">
+            <div class="grid gap-4 text-center lg:text-left">
+              <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                Aktif Transaksi,
+                <span class="text-sky-500 font-serif italic"
+                  >Lebih Untung!</span
+                >
+              </h2>
+              <p>
+                Mitra tidak diwajibkan memenuhi target tertentu, tetapi semakin
+                aktif bertransaksi — seperti bayar listrik, BPJS, atau angsuran
+                — semakin besar peluang untuk mendapatkan komisi dan insentif
+                tambahan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <div class="h-full w-full mx-auto max-w-6xl px-4 py-20 text-center">
-                <div class="grid gap-4">
-                    <h2 class="text-3xl md:text-6xl font-bold">
-                      <span class="text-sky-500">Proyeksi</span> Revenue Kota
-                    </h2>
-                    <p class="mb-8 max-w-2xl mx-auto">
-                        Target pendapatan kota dari aktivitas mitra driver berdasarkan estimasi transaksi bulanan dan pembagian hasil biaya operasional.
-                    </p>
-                    <div class="w-full rounded-2xl overflow-hidden border border-purple-900/20">
-                        <img src="/assets/proyeksi-1.png" alt=""  />
-                    </div>
-                </div>
+    <section id="vendor" class="bg-linear-to-b from-sky-50 to-red-50">
+      <div class="h-full w-full mx-auto sm:max-w-xl lg:max-w-6xl px-4">
+        <div class="flex flex-wrap -mx-4 items-center">
+          <div class="w-full lg:w-1/2 px-4 py-20">
+            <div class="grid gap-4 text-center lg:text-left">
+              <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                <span class="text-sky-500 font-serif italic"
+                  >Jadi Vendor MKV,</span
+                >
+                Dapat Cuan dari Area-mu
+              </h2>
+              <p>
+                Setiap kali ada customer yang bertransaksi di wilayah vendor,
+                maka vendor MKV (Mitra Kelola Vendor) akan otomatis mendapatkan
+                bagi hasil secara real-time — tanpa harus ikut menjual layanan
+                PPOB.
+              </p>
             </div>
-        </section>
+          </div>
 
-        <section>
-            <div class="h-full w-full mx-auto max-w-6xl px-4 py-20 text-center">
-                <div class="grid gap-4">
-                    <h2 class="text-3xl md:text-6xl font-bold">
-                      <span class="text-sky-500">Proyeksi</span> Revenue Kota
-                    </h2>
-                    <p class="mb-8 max-w-2xl mx-auto">
-                        Target revenue kota yang diperoleh dari transaksi pelanggan aktif yang menggunakan layanan digital secara berulang dan konsisten.
-                    </p>
-                    <div class="w-full rounded-2xl overflow-hidden border border-purple-900/20">
-                        <img src="/assets/proyeksi-2.png" alt=""  />
-                    </div>
-                </div>
+          <div class="w-full lg:w-1/2 px-4 pt-14">
+            <div class="w-full max-w-md mx-auto">
+              <img src="/assets/holding-phone.png" alt="" />
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <footer class="bg-gray-900 text-white">
-            <div class="w-full mx-auto max-w-7xl px-4 py-20">
-                <div class="flex flex-wrap -mx-4 items-center justify-between">
-                    <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                        <div class="grid gap-4">
-                            <h3 class="text-2xl font-bold">RadjaGo</h3>
-                            <p>Solusi ojek online yang siap memberikan kenyamanan dan efisiensi dalam setiap perjalanan Anda.</p>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-                        <div class="grid gap-4">
-                            <h3 class="text-2xl font-bold">Contact</h3>
-                            <p>Gg. Smanda 3, Sungai Lulut, Kec. Banjarmasin Timur, Kota Banjarmasin, Kalimantan Selatan 70653</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="border-b border-gray-200">
+      <div class="h-full w-full mx-auto max-w-6xl px-4 py-20 text-center">
+        <div class="grid gap-4">
+          <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+            <span class="text-sky-500 font-serif italic">Proyeksi</span> Revenue
+            Dari Mitra
+          </h2>
+          <p class="mb-8 max-w-2xl mx-auto">
+            Proyeksi pendapatan kota dari aktivitas mitra driver berdasarkan
+            estimasi transaksi bulanan dan pembagian hasil biaya operasional.
+          </p>
+          <div
+            class="w-full rounded-2xl overflow-hidden border border-purple-900/20"
+          >
+            <img src="/assets/proyeksi-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="h-full w-full mx-auto max-w-6xl px-4 py-20 text-center">
+        <div class="grid gap-4">
+          <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+            <span class="text-sky-500 font-serif italic">Proyeksi</span> Revenue
+            Dari Pelanggan
+          </h2>
+          <p class="mb-8 max-w-2xl mx-auto">
+            Proyeksi revenue kota yang diperoleh dari transaksi pelanggan aktif
+            yang menggunakan layanan digital secara berulang dan konsisten.
+          </p>
+          <div
+            class="w-full rounded-2xl overflow-hidden border border-purple-900/20"
+          >
+            <img src="/assets/proyeksi-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-purple-900 text-white">
+      <div class="h-full w-full mx-auto max-w-4xl px-4 py-20 z-10 relative">
+        <div class="grid gap-4 text-center">
+          <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+            Server Milik Sendiri Untuk
+            <span class="text-sky-300 font-serif italic">Kinerja Maksimal</span>
+          </h2>
+          <p class="mb-6">
+            Untuk mendukung kelancaran transaksi dan keamanan data, RadJago
+            sejak 2022 telah menggunakan server colocation di data center BSD
+            sebagai bentuk komitmen menghadapi lonjakan trafik pengguna yang
+            terus meningkat.
+          </p>
+        </div>
+      </div>
+      <div class="relative overflow-hidden h-[400px] -mt-[200px]">
+        <div
+          class="absolute inset-0 bg-linear-to-b from-purple-900 to-transparent"
+        ></div>
+        <img
+          src="/assets/premium-bg.webp"
+          alt=""
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+    </section>
+
+    <section id="legalitas">
+      <div class="w-full mx-auto max-w-3xl px-4 pt-20 grid gap-4 text-center">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+          Legal & Tersertifikasi
+        </h1>
+        <p>
+          Semua dokumen legal seperti NIB, NPWP, PSE, hingga SK Kemenkumham
+          telah terpenuhi. Proses lanjutan seperti HAKI & BSSN sedang dalam
+          tahap finalisasi.
+        </p>
+      </div>
+      <div class="w-full mx-auto max-w-4xl pb-20 px-4">
+        <div
+          class="flex flex-wrap -mx-4 items-start mt-10 divide-y divide-gray-200 md:divide-none text-sm"
+        >
+          <div class="w-full md:w-1/2 px-4">
+            <ul class="text-center md:text-right divide-y divide-gray-200">
+              <li class="py-4">NIB : 0507240037635</li>
+              <li class="py-4">NPWP : 197550320731000</li>
+              <li class="py-4">Akte Notaris : 013 Tanggal 02 Juli 2024</li>
+              <li class="py-4">PSE Kominfo Pusat : 050724003763500000001</li>
+              <li class="py-4">
+                SK Kemenkumham : AHU-0048171.AH.01.01.TAHUN 2024
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 px-4">
+            <ul class="text-center md:text-left divide-y divide-gray-200">
+              <li class="py-4">HAKI : On Progress</li>
+              <li class="py-4">BNRI Pusat : 020645 -12 Juli 2024</li>
+              <li class="py-4">NITKU : 0197550320731000000000</li>
+              <li class="py-4">D&B D-U-N-S NUMBER : 64-663-6601</li>
+              <li class="py-4">
+                BSSN (Badan Siber Sandi Negara) : On Progress
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="w-full mx-auto max-w-6xl px-4 py-20">
+        <div
+          class="bg-purple-900 rounded-3xl px-4 py-16 md:px-8 lg:px-16 lg:py-20 text-white"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6"
+          >
+            Tunggu Apa Lagi?<br />Download RadjaGo Sekarang!
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+          >
+            <div>
+              <h3 class="font-bold text-lg">Aplikasi Customer</h3>
+              <p class="mb-4">Harga jujur tanpa biaya tersembunyi.</p>
+              <a
+                href="https://play.google.com/store/apps/details?id=id.usergoopelanggan.android"
+                target="_blank"
+                class="px-6 py-2 bg-sky-500 text-white rounded-full cursor-pointer hover:bg-purple-500"
+              >
+                Download
+              </a>
             </div>
-            <hr class="opacity-10">
-            <div class="w-full mx-auto max-w-7xl px-4 py-8 text-center">
-                PT Affiliasi Transaksi Indonesia © 2025
+            <div>
+              <h3 class="font-bold text-lg">Aplikasi Driver</h3>
+              <p class="mb-4">Bebas potongan langsung cuan.</p>
+              <a
+                href="https://play.google.com/store/apps/details?id=id.radjagodriver.android"
+                target="_blank"
+                class="px-6 py-2 bg-sky-500 text-white rounded-full cursor-pointer hover:bg-purple-500"
+              >
+                Download
+              </a>
             </div>
-        </footer>
+            <div>
+              <h3 class="font-bold text-lg">Mitra Konter Virtual (MKV)</h3>
+              <p class="mb-4">Jualan online bebas komisi.</p>
+              <a
+                href="https://play.google.com/store/apps/details?id=id.radjagomitra.android"
+                target="_blank"
+                class="px-6 py-2 bg-sky-500 text-white rounded-full cursor-pointer hover:bg-purple-500"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="w-full mx-auto max-w-6xl px-4 py-20">
+        <div class="flex flex-wrap -mx-4 items-center justify-between">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="grid gap-4">
+              <h3 class="text-2xl font-bold">RadjaGo</h3>
+              <p>
+                Solusi ojek online yang siap memberikan kenyamanan dan efisiensi
+                dalam setiap perjalanan Anda.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="grid gap-4">
+              <h3 class="text-2xl font-bold">Alamat</h3>
+              <p>
+                Gg. Smanda 3, Sungai Lulut, Kec. Banjarmasin Timur, Kota
+                Banjarmasin, Kalimantan Selatan 70653
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="grid gap-4">
+              <h3 class="text-2xl font-bold">Contact</h3>
+              <ul>
+                <li class="flex items-center gap-2">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-4 text-purple-800"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>08115081222</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-4 text-purple-800"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>081349521015</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-4 text-purple-800"
+                    >
+                      <path
+                        d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                      />
+                      <path
+                        d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                      />
+                    </svg>
+                  </span>
+                  <span>radjagoindonesia@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="opacity-10" />
+      <div class="w-full mx-auto max-w-6xl px-4 py-8 text-center">
+        PT Affiliasi Transaksi Indonesia © 2025
+      </div>
+    </footer>
   </body>
 </html>
